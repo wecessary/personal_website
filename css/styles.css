@@ -279,4 +279,12 @@ input[type=checkbox]:checked ~ .menu{
 .dropdown li:hover {
  background-color: #4c9e9e;
 }
+ 
+.container{
+max-width:100%
+}
+
+.home{
+display:none
+}
 }

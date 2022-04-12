@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wesley Jessie | Data | Programming | Economics | Statistics</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+    <script src="js/script.js"></script>
+
+
+</head>
+<body>
+<nav class="navbar" id="home">
+    <!-- LOGO -->
+    <div class="logo">WJ</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+            <li><a href="#second_part">About</a></li>
+            <li><a href="#third_part">Experience</a></li>
+            <li class="services">
+                <a href="#fourth_part">Portfolio</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                    <li><a href="/">Dropdown 1 </a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 3</a></li>
+                    <li><a href="/">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#fifth_part">Contact</a></li>
+        </div>
+    </ul>
+</nav>
+
+<a href="#home" class="home">Home<div class="home_line2"></div></a>
+<div class="first_container" id="first_part">
+
+    <p class="greetings"> Hi, I am</p>
+    <h1 class="my_name">Wesley Jessie.</h1>
+    <h2 class="what_i_do">Data | Programming | Economics</h2>
+</div>
+
+
+<hr>
+
+<div class="container" id="second_part">
+
+    <h2> About</h2>
+
+
+    <img class="profile_pic" src="images/wesley.jpg" alt="">
+    <p class="bio_text"> Hello! My name is Wesley.Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+        Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+        Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+        Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+    </p>
+
+</div>
+
+<hr>
+
+<div class="container" id="third_part">
+
+    <h2>Work Experience</h2>
+
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'London')" id="defaultOpen">Economic Consultant</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Visiting Lecturer</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Graduate Teaching Assistant</button>
+        <button class="tablinks" onclick="openCity(event, 'AHT')">Anti-Harassment Trainer</button>
+    </div>
+
+    <div id="London" class="tabcontent default_content">
+        <h3>Economic consultant <span><a href="https://londoneconomics.co.uk/">@ London Economics </a></span> </h3>
+        <p>Apr 2019 - Feb 2022</p>
+        <p> Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+        </p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Visiting Lecturer <a href="https://www.city.ac.uk/">@ City University</a></h3>
+        <p>Jan 2019 - Jun 2019</p>
+        <p> Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+        </p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3>Graduate Teaching Assistant <a href="https://www.lse.ac.uk/">@ London School of Economics</a> </h3>
+        <p>Sep 2017 - Jun 2019</p>
+        <p> Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+        </p>
+    </div>
+
+    <div id="AHT" class="tabcontent">
+        <h3>Anti-Harassment Trainer <a href="https://www.lse.ac.uk/">@ London School of Economics</a></span></h3>
+        <p>Jan 2019 – Jun 2019</p>
+        <p> Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros
+        </p>
+    </div>
+
+</div>
+
+<hr>
+
+<div class="container" id="fourth_part">
+    <h2>Some things I have built</h2>
+    <p> Coming soon.</p>
+
+</div>
+
+<hr>
+
+<div class="container" id="fifth_part">
+    <div class="contact-me">
+        <h2>Get In Touch</h2>
+
+        <p class="last_bit">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+        <a class="btn last_bit" href="mailto:name@email.com">CONTACT ME</a>
+    </div>
+    <div>
+        <a class="footer-link last_bit" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <p class ="last_bit">© 2018 Name Surname.</p>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -282,7 +282,7 @@ input[type=checkbox]{
  padding: 16px 0;
 }
 
-.nav-links a:link {
+.nav-links a:link, a:visited, a:hover, a:active {
 color:white
 }
 
@@ -346,8 +346,6 @@ margin-left:25%
 
 
 }
-
-
 
 
 @media (max-height: 868px){

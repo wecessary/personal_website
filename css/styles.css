@@ -9,30 +9,27 @@ h2{
 margin-bottom:2rem;
 }
 
-h3{
-color:black}
 
-.home{
+
+.home {
 position:fixed;
 writing-mode: vertical-lr;
 left:3.55rem;
 bottom:42%;
 color:black;
 font-weight:bold;
-
+text-decoration:none
 }
 
 .home_line2{
 position:fixed;
 border-left: 6px solid black;
 left:3.8rem;
-height: 300px;
+height: 17.8rem;
 bottom:9%
 }
 
 
-a{
-color:#1572A1}
 
 .greetings{
 font-size:1.2rem;
@@ -47,7 +44,6 @@ font-weight: normal;
 color: #595260;
 
 }
-
 
 .profile_pic{
 height:200px;
@@ -82,10 +78,6 @@ max-width:50%
 }
 
 
-
-.last_bit{
-
-}
 
 
 
@@ -164,10 +156,23 @@ display:inline-block;
  color: black;
 
 }
-.nav-links a {
+.nav-links a:link, a:visited, a:hover, a:active {
  color: black;
+ text-decoration: none
+}
+
+a.workplace{
+
+color:#1572A1;
+text-decoration: none
 
 }
+
+a.footer-link{
+color:#1572A1;
+text-decoration: none
+}
+
 
 .nav-links a:hover{
 color:white;
@@ -179,7 +184,8 @@ padding:7px
 /* LOGO */
 .logo {
  font-size: 32px;
- font-weight:bold
+ font-weight:bold;
+
 }
 /* NAVBAR MENU */
 .menu {
@@ -191,9 +197,7 @@ padding:7px
  transition: 0.3s ease;
 }
 
-a:link, a:visited, a:hover, a:active{
-  text-decoration: none;
-}
+
 
 .menu li {
  padding: 5px 14px;
@@ -275,8 +279,13 @@ input[type=checkbox]:checked ~ .menu{
  background-color: #525E75;
 }
 
+.first_container{
+margin: 0 25%
+}
+
 .container{
-max-width:100%
+max-width:100%;
+margin: 0 10%
 }
 
 .home{
@@ -290,18 +299,23 @@ hr {
   margin: 100px auto;
 }
 
+.profile_pic{
+float:none;
+display:block;
+margin-left:25%
 }
 
-@media (max-height: 1366px) {
 
-.home{
-left:1rem
+
+}
+
+@media (max-height: 900px) {
+
+.home {
+left:1rem;
+text-decoration:underline
 }
 .home_line2{
-position:fixed;
-border-left: 6px solid black;
-left:1.3rem;
-height: 300px;
-bottom:1%
+display:none
 }
 }

@@ -25,15 +25,9 @@ a.home:hover{
 text-decoration:underline
 }
 
-.home_line2{
-position:fixed;
-border-left: 6px solid black;
-left:1.3rem;
-height: 17.8rem;
-bottom:9%
-}
 
-.email{
+
+.contacts{
 position:fixed;
 writing-mode: vertical-lr;
 right:0rem;
@@ -42,18 +36,6 @@ color:black;
 font-weight:bold;
 text-decoration:none;
 }
-a.email:hover{
-text-decoration:underline
-}
-
-.email_line{
-position:fixed;
-border-left: 6px solid black;
-right:0.5rem;
-height: 17.8rem;
-bottom:9%
-}
-
 
 
 .greetings{
@@ -75,6 +57,12 @@ height:12.5rem;
 border-radius:20%;
 float:right;
 margin-left:0rem
+}
+
+.bio_text{
+width:60%;
+text-align: justify;
+text-justify: inter-word;
 }
 
 h1{
@@ -399,7 +387,7 @@ margin-left:25%
 
 
 
-
+/*
 @media (max-height: 868px){
 .home {
 left:1rem;
@@ -417,3 +405,4 @@ display:none
 }
 
 }
+*\

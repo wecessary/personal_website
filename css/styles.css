@@ -30,13 +30,16 @@ text-decoration:underline
 .contacts{
 position:fixed;
 writing-mode: vertical-lr;
-right:0rem;
+right:1rem;
 bottom:42%;
 color:black;
 font-weight:bold;
 text-decoration:none;
 }
 
+.icon{
+font-size:1.5rem; color:black
+}
 
 .greetings{
 font-size:1.2rem;
@@ -56,7 +59,7 @@ color: #595260;
 height:12.5rem;
 border-radius:20%;
 float:right;
-margin-left:0rem
+margin-left:24px;
 }
 
 .bio_text{
@@ -90,6 +93,45 @@ text-align:left;
 min-height:100vh;
 max-width:50%
 }
+
+.fourth_container{
+display:inline-block;
+text-align:left;
+min-height:100vh;
+min-width:90%
+}
+
+.whatsgonnagetyou{
+border:4px solid #000000;
+}
+
+.project_text{
+width:50%;
+}
+
+.project{
+float:right;
+}
+
+.project_header1{
+margin-top:2rem
+}
+
+.project_row{
+margin-top:7rem
+}
+
+.project_pic{
+height:15rem;
+border-radius:10%;
+}
+
+
+.project a:hover img{
+  opacity: 0.5;
+}
+
+
 
 a.footer:{
 text-decoration:none
@@ -134,7 +176,6 @@ text-decoration:underline
 a.workplace:active{
 text-decoration:underline
 }
-
 
 
 
@@ -360,14 +401,14 @@ margin: 0 10%
 
 .container{
 max-width:100%;
-margin: 0 10%
+margin: 0 5%
 }
 
 .home{
 display:none
 }
 
-.email{
+.contacts{
 display:none
 }
 
@@ -377,8 +418,20 @@ width: 15%;
 
 .profile_pic{
 float:none;
-display:block;
-margin-left:25%
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.bio_text{
+width:100%;
+}
+
+.project_text{
+width:100%
+}
+.project{
+float:none
 }
 
 

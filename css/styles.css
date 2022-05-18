@@ -11,6 +11,7 @@ margin-bottom:2rem;
 
 
 
+
 .home {
 position:fixed;
 writing-mode: vertical-lr;
@@ -30,7 +31,7 @@ text-decoration:underline
 .contacts{
 position:fixed;
 writing-mode: vertical-lr;
-right:1rem;
+right:0.5rem;
 bottom:42%;
 color:black;
 font-weight:bold;
@@ -46,7 +47,6 @@ font-size:1.2rem;
 }
 .my_name{
 font-size: 5.6rem;
-margin-top:0
 }
 .what_i_do{    /* 40px */
 font-size: 2.5rem;
@@ -83,7 +83,7 @@ hr {
 display: inline-block;
 text-align:left;
 min-height:100vh;
-padding-top:100px;
+padding-top:10%;
 }
 
 
@@ -91,6 +91,11 @@ padding-top:100px;
 display:inline-block;
 text-align:left;
 min-height:100vh;
+max-width:50%
+}
+
+.last_container{
+display:inline-block;
 max-width:50%
 }
 
@@ -113,13 +118,19 @@ width:50%;
 float:right;
 }
 
-.project_header1{
-margin-top:2rem
-}
+/*.project_header{
+color:#525E75;
+}*/
 
 .project_row{
-margin-top:7rem
+margin-top:5rem
 }
+
+.project_row1{
+margin-top: 2rem
+}
+
+
 
 .project_pic{
 height:15rem;
@@ -131,6 +142,18 @@ border-radius:10%;
   opacity: 0.5;
 }
 
+a.below{
+color:#525E75
+}
+
+a.below:active{
+color:#525E75
+}
+
+a.below:visited{
+color:#525E75
+}
+
 
 
 a.footer:{
@@ -138,12 +161,10 @@ text-decoration:none
 }
 
 a.footer:link{
-color:#1572A1;
 text-decoration:none
 }
 
 a.footer:visited{
-color:#1572A1;
 text-decoration:none
 }
 
@@ -262,7 +283,7 @@ display:inline-block;
 color:white;
 background-color: #525E75;
 border-radius: 5px;
-padding:7px
+padding:2px;
 }
 
 /* LOGO */
@@ -364,9 +385,9 @@ font-size:0.8em;
  padding: 16px 0;
 }
 
-.nav-links a:link, a:visited, a:hover, a:active {
+/*.nav-links a:link, a:visited, a:hover, a:active {
 color:white
-}
+}*/
 
 .nav-links a:hover {
 text-decoration:underline
@@ -427,7 +448,7 @@ margin-right: auto;
 width:100%;
 }
 
-.project_text{
+.project_text1{
 width:100%
 }
 .project{

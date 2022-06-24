@@ -2,15 +2,25 @@ body{
 background-color:#FAF3F3;
 margin:0px;
 font-family: "Montserrat", Arial, sans-serif; /*font size: 100% = 16px; 1em = 16px; em inherits parent's setting, rem doesn't*/;
-text-align:center
-}
-
-h2{
-margin-bottom:2rem;
+text-align:left
 }
 
 
+.container-fluid{
+padding:10% 15%;
+}
 
+nav div.container-fluid{
+padding: 5% 15%;
+}
+
+.navbar-brand{
+font-size:2rem;
+}
+
+.nav-link{
+font-size:1.5rem;
+}
 
 .home {
 position:fixed;
@@ -21,12 +31,6 @@ font-weight:bold;
 color:black;
 text-decoration:none
 }
-
-a.home:hover{
-text-decoration:underline
-}
-
-
 
 .contacts{
 position:fixed;
@@ -45,8 +49,10 @@ font-size:1.5rem; color:black
 .greetings{
 font-size:1.2rem;
 }
+
 .my_name{
 font-size: 5.6rem;
+font-weight: bold;
 }
 .what_i_do{    /* 40px */
 font-size: 2.5rem;
@@ -56,20 +62,17 @@ color: #595260;
 }
 
 .profile_pic{
-height:12.5rem;
+height:15rem;
 border-radius:20%;
-float:right;
-margin-left:24px;
+margin-left:18rem
 }
 
-.bio_text{
-width:60%;
-text-align: justify;
-text-justify: inter-word;
+.project-title{
+font-weight: bold;
 }
 
-h1{
-line-height:1
+h2{
+padding-bottom:2rem
 }
 
 hr {
@@ -79,56 +82,25 @@ hr {
   margin: 100px auto;
 }
 
-.first_container{
-display: inline-block;
-text-align:left;
-min-height:100vh;
-padding-top:10%;
+.portfolio-pic{
+height:13.5rem;
+border-radius:20%;
+display:block;
+margin-left: auto;
+margin-right: auto;
 }
 
-
-.container{
-display:inline-block;
-text-align:left;
-min-height:100vh;
-max-width:50%
+img:hover{
+  opacity: 0.5;
 }
 
-.last_container{
-display:inline-block;
-max-width:50%
-}
-
-.fourth_container{
-display:inline-block;
-text-align:left;
-min-height:100vh;
-min-width:90%
-}
 
 .whatsgonnagetyou{
 border:4px solid #000000;
 }
 
-.project_text{
-width:50%;
-}
 
-.project{
-float:right;
-}
 
-/*.project_header{
-color:#525E75;
-}*/
-
-.project_row{
-margin-top:5rem
-}
-
-.project_row1{
-margin-top: 2rem
-}
 
 
 
@@ -157,22 +129,27 @@ color:#525E75
 
 
 a.footer:{
-text-decoration:none
+text-decoration:none;
+color:black;
 }
 
 a.footer:link{
-text-decoration:none
+text-decoration:none;
+color:black;
 }
 
 a.footer:visited{
-text-decoration:none
+text-decoration:none;
+color:black;
 }
 
 a.footer:active{
-text-decoration:underline
+text-decoration:underline;
+color:black;
 }
 a.footer:hover{
-text-decoration:underline
+text-decoration:underline;
+color:black;
 }
 
 
@@ -249,7 +226,7 @@ text-decoration:underline
   float: left;
   padding: 0rem 0.75rem;
   border: 5px solid #525E75;
-  width: 70%;
+  width: 40%;
   border-left: none;
   border-right: none;
   height: 30rem;
@@ -257,226 +234,51 @@ text-decoration:underline
   }
 
 
-
-  .default_content{
+.default_content{
 display:inline-block;
 }
 
+@media (max-width: 768px){
 
-/* Top nav bar */
-.navbar {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 20px;
- background-color: #FAF3F3;
- color: black;
-
-}
-.nav-links a:link, a:visited, a:hover, a:active {
- color: black;
- text-decoration: none
+body{
+text-align: center;
 }
 
-
-.nav-links a:hover{
-color:white;
-background-color: #525E75;
-border-radius: 5px;
-padding:2px;
+#experience .container-fluid{
+padding:10% 5%;
 }
 
-/* LOGO */
-.logo {
- font-size: 2.5rem;
- font-weight:bold;
-
-}
-/* NAVBAR MENU */
-.menu {
- display: flex;
- gap: 1em;
- font-size: 18px;
-}
-.menu li:hover {
- transition: 0.3s ease;
+#id{
+text-align;
 }
 
-
-
-.menu li {
- padding: 5px 14px;
- list-style: none;
- font-weight:bold;
- text-decoration: none;
-
+.tab{
+width:30%;
+text-align: left;
 }
-/* DROPDOWN MENU */
-.services {
- position: relative;
-}
-.dropdown {
- background-color: #525E75;
- padding: 1em 0;
- position: absolute; /*WITH RESPECT TO PARENT*/
- display: none;
- border-radius: 8px;
- top: 35px;
-
-}
-.dropdown li + li {
- margin-top: 10px;
-}
-.dropdown li {
- padding: 0.5em 1em;
- width: 10em;
- text-align: center;
-}
-.dropdown li:hover {
- background-color: #525E75;
-}
-.services:hover .dropdown {
- display: block;
+.tabcontent{
+width: 70%;
+text-align: left;
 }
 
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type=checkbox]{
- display: none;
-}
-/*HAMBURGER MENU*/
-.hamburger {
- display: none;
- font-size: 4.5rem;
- user-select: none;
-}
-/* APPLYING MEDIA QUERIES */
-
-/* smallest phones*/
-@media (max-width: 375px) {
-
-#third_part{
-max-width:100%;
-margin:0 10%
-}
-
-.tab button{
-font-size:0.75rem;
-}
-
-.tabcontent h3{
-font-size:1em;
-}
-
-.tabcontent p{
-font-size:0.8em;
-}
-
-}
-
-@media (max-width: 768px) {
-.menu {
- display:none;
- position: absolute;
- background-color:#525E75;
- right: 0;
- left: 0;
- text-align: center;
- padding: 16px 0;
-}
-
-/*.nav-links a:link, a:visited, a:hover, a:active {
-color:white
-}*/
-
-.nav-links a:hover {
-text-decoration:underline
-}
-
-.menu li:hover {
- display: inline-block;
- background-color:#525E75;
- transition: 0.3s ease;
-}
-.menu li + li {
- margin-top: 12px;
-}
-input[type=checkbox]:checked ~ .menu{
- display: block;
-}
-.hamburger {
- display: block;
-}
-.dropdown {
- left: 50%;
- top: 30px;
- transform: translateX(35%);
-}
-.dropdown li:hover {
- background-color: #525E75;
-}
-
-.first_container{
-margin: 0 10%
-}
-
-.container{
-max-width:100%;
-margin: 0 5%
+.profile_pic{
+margin-left:0rem
 }
 
 .home{
-display:none
+display:none;
 }
 
+
 .contacts{
-display:none
+display:none;
 }
 
 hr {
 width: 15%;
 }
 
-.profile_pic{
-float:none;
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-
-.bio_text{
-width:100%;
-}
-
-.project_text1{
-width:100%
-}
-.project{
-float:none
 }
 
 
 
-}
-
-
-
-/*
-@media (max-height: 868px){
-.home {
-left:1rem;
-text-decoration:underline;
-}
-.home_line2{
-display:none
-}
-.email{
-right:0rem;
-text-decoration:underline
-}
-.email_line{
-display:none
-}
-
-}
-*\

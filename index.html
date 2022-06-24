@@ -1,242 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wesley Jessie | Data Science | Programming | Economics | Statistics</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a6c4515f98.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--own css-->
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-<nav class="navbar" id="home">
-    <!-- LOGO -->
-    <div class="logo">WJ</div>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle"/>
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-            <li><a href="#second_part">About</a></li>
-            <li><a href="#third_part">Experience</a></li>
-            <li class="services">
-                <a href="#fourth_part">Portfolio</a>
-                <!-- DROPDOWN MENU -->
-                <ul class="dropdown">
-                    <li><a href="#project1">OOP: a game </a></li>
-                    <li><a href="#project2">Web scraping</a></li>
-                    <li><a href="#project3">Web browser automation</a></li>
-                </ul>
-            </li>
-            <li><a href="WJ_CV.pdf">CV</a></li>
-            <li><a href="#fifth_part">Contact</a></li>
+
+<!--navbar-->
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">WJ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#porfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </ul>
+    </div>
 </nav>
 
+<!--icons on the side-->
 
-<a href="#home" class="home" title="Home"><i class="fa-solid fa-house icon"></i></a>
+<a href="#navbar-content" class="home" title="Home"><i class="fa-solid fa-house icon"></i></a>
 
 <div class="contacts">
-<a href="mailto:wesleymhj@gmail.com" title="My email"><i class="fa-solid fa-envelope icon"></i></a>
-<a href="https://uk.linkedin.com/in/wesley-m-h-jessie-7552b295" title="My LinkedIn"><i class="fa-brands fa-linkedin icon"></i></a>
-<a href="https://github.com/wecessary" title="My Github"><i class="fa-brands fa-github icon"></i></a>
-<a href="WJ_CV.pdf" title="CV"><i class="fa fa-file-text icon"></i></a>
+    <a href="mailto:wesleymhj@gmail.com" title="My email"><i class="fa-solid fa-envelope icon"></i></a>
+    <a href="https://uk.linkedin.com/in/wesley-m-h-jessie-7552b295" title="My LinkedIn"><i
+            class="fa-brands fa-linkedin icon"></i></a>
+    <a href="https://github.com/wecessary" title="My Github"><i class="fa-brands fa-github icon"></i></a>
+    <a href="WJ_CV.pdf" title="CV"><i class="fa fa-file-text icon"></i></a>
 
 </div>
 
+<!--Greetings section-->
+<section id="title">
 
-<div class="first_container" id="first_part">
+    <div class="container-fluid">
 
-    <p class="greetings"> Hi, I am</p>
-    <h1 class="my_name">Wesley Jessie.</h1>
-    <h2 class="what_i_do">Data Science | Programming | Economics</h2>
-</div>
+        <p class="greetings"> Hi, I am</p>
+        <h1 class="my_name">Wesley Jessie.</h1>
+        <h2 class="what_i_do">Data Science | Programming | Economics</h2>
+    </div>
 
+</section>
 
 <hr>
 
-<div class="container" id="second_part">
+<section id="about">
+    <div class="container-fluid">
+        <h2> About</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Hello! My name is Wesley. I make things in Python and am an economist.</p>
+                <p>I have three years of experience as an economic consultant,
+                    where I have used data analysis and econometrics to guide public policy for public sector clients
+                    such as HM Treasury, UK Space Agency, and the European Commission.
+                </p>
+                <p>
+                    Before then I was a Visiting Lecturer at City University teaching econometrics and data analysis.
+                    I also taught microeconomics at the London School of Economics,
+                    for which I earned the Highly Commended Class Teacher prize.
+                </p>
+                <p>
+                    I left my previous role to explore things that I can do with coding beyond data analysis.
+                    This website is one of the things that I've made. Check out some of the other things that I've made
+                    so far
+                    <span><a href="#fourth_part" class="below">below</a></span>.
+                </p>
 
-    <h2> About</h2>
+                <p>
+                    Here are some technologies I work with:
+                    <br>
+                <ul>
+                    <li><b>Python</b>: Numpy, Pandas, Scikit-learn, Selenium, Beautiful Soup, Matplotlib, Seaborn,
+                        Plotly, Flask, Dash
+                    </li>
+                    <li><b>R</b>: Tidyverse</li>
+                    <li><b>SQL</b>: PostgreSQL</li>
+                    <li><b>HTML & CSS</b></li>
+                    <li><b>Stata</b></li>
+                </ul>
 
-
-    <img class="profile_pic" src="images/wesley.jpg" alt="">
-    <div class="bio_text">
-        <p>Hello! My name is Wesley. I make things in Python and am an economist.</p>
-
-        <p>I have three years of experience as an economic consultant,
-            where I have used data analysis and econometrics to guide public policy for public sector clients
-            such as HM Treasury, UK Space Agency, and the European Commission.
-        </p>
-
-        <p>
-            Before then I was a Visiting Lecturer at City University teaching econometrics and data analysis.
-            I also taught microeconomics at the London School of Economics,
-            for which I earned the Highly Commended Class Teacher prize.
-        </p>
-
-        <p>
-            I left my previous role to explore things that I can do with coding beyond data analysis.
-            This website is one of the things that I've made. Check out some of the other things that I've made so far
-            <span><a href="#fourth_part" class="below">below</a></span>.
-        </p>
-
-        <p>
-            Here are some technologies I work with:
-            <br>
-            <ul>
-                <li><b>Python</b>: Numpy, Pandas, Scikit-learn, Selenium, Beautiful Soup, Matplotlib, Seaborn, Plotly</li>
-                <li><b>R</b>: Tidyverse</li>
-                <li><b>SQL</b>: PostgreSQL</li>
-                <li><b>HTML & CSS</b> (I wrote this website!) </li>
-                <li><b>Stata</b></li>
-            </ul>
-
-        </p>
+                </p>
 
 
+            </div>
+            <div class="col-lg-6">
+                <img class="profile_pic" src="images/wesley.jpg" alt="">
+            </div>
+        </div>
     </div>
-
-
-</div>
+</section>
 
 <hr>
 
-<div class="container" id="third_part">
+<section id="experience">
+    <div class="container-fluid">
+        <h2>Work Experience</h2>
 
-    <h2>Work Experience</h2>
+        <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'LE')" id="defaultOpen">Economic Consultant
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'VL')">Visiting Lecturer</button>
+            <button class="tablinks" onclick="openCity(event, 'TA')">Teaching Assistant</button>
+            <button class="tablinks" onclick="openCity(event, 'AHT')">Anti-Harassment Trainer</button>
+        </div>
 
-
-    <div class="tab">
-        <button class="tablinks active" onclick="openCity(event, 'LE')" id="defaultOpen">Economic Consultant</button>
-        <button class="tablinks" onclick="openCity(event, 'VL')">Visiting Lecturer</button>
-        <button class="tablinks" onclick="openCity(event, 'TA')">Teaching Assistant</button>
-        <button class="tablinks" onclick="openCity(event, 'AHT')">Anti-Harassment Trainer</button>
-    </div>
-
-    <div id="LE" class="tabcontent default_content">
-        <h3>Economic consultant <span><a href="https://londoneconomics.co.uk/" class="workplace">@ London Economics </a></span> </h3>
-        <p>Apr 2019 - Feb 2022</p>
-        <p>
+        <div id="LE" class="tabcontent default_content">
+            <h3>Economic consultant <span><a href="https://londoneconomics.co.uk/"
+                                             class="workplace">@ London Economics </a></span></h3>
+            <p>Apr 2019 - Feb 2022</p>
+            <p>
             <ul>
                 <li>Delivered economic models and interactive dashboards to clients such as Welsh Government,
-                    UK Space Agency, and European Commission</li>
+                    UK Space Agency, and European Commission
+                </li>
                 <li>Analysed and visualised data for written deliverables using Python, R, Stata, and Excel</li>
                 <li>Led and delivered an impact assessment as project manager</li>
             </ul>
-        </p>
-    </div>
+            </p>
+        </div>
 
-    <div id="VL" class="tabcontent">
-        <h3>Visiting Lecturer <a href="https://www.city.ac.uk/" class="workplace">@ City University</a></h3>
-        <p>Jan 2019 - Jun 2019</p>
-        <p>
+        <div id="VL" class="tabcontent">
+            <h3>Visiting Lecturer <a href="https://www.city.ac.uk/" class="workplace">@ City University</a></h3>
+            <p>Jan 2019 - Jun 2019</p>
+            <p>
             <ul>
                 <li>Taught undergraduate data analysis and econometrics</li>
                 <li>Led computer sessions in Excel and Stata</li>
                 <li>Taught topics such as sampling and statistical inference and regression analysis</li>
             </ul>
-        </p>
-    </div>
+            </p>
+        </div>
 
-    <div id="TA" class="tabcontent">
-        <h3>Graduate Teaching Assistant <a class="workplace" href="https://www.lse.ac.uk/" >@ London School of Economics</a> </h3>
-        <p>Sep 2017 - Jun 2019</p>
-        <p>
+        <div id="TA" class="tabcontent">
+            <h3>Graduate Teaching Assistant <a class="workplace" href="https://www.lse.ac.uk/">@ London School of
+                Economics</a></h3>
+            <p>Sep 2017 - Jun 2019</p>
+            <p>
             <ul>
                 <li>Earned Highly Commended Class Teacher prize for teaching microeconomics</li>
                 <li>Achieved student ratings of 4.7/5 (5 highest) in 2018/19 and 1.3/5 (1 highest) in 2017/18</li>
             </ul>
-        </p>
-    </div>
+            </p>
+        </div>
 
-    <div id="AHT" class="tabcontent">
-        <h3>Anti-Harassment Trainer <a href="https://www.lse.ac.uk/" class="workplace">@ London School of Economics</a></span></h3>
-        <p>Jan 2019 – Jun 2019</p>
-        <p>
+        <div id="AHT" class="tabcontent">
+            <h3>Anti-Harassment Trainer <a href="https://www.lse.ac.uk/" class="workplace">@ London School of
+                Economics</a></span></h3>
+            <p>Jan 2019 – Jun 2019</p>
+            <p>
             <ul>
                 <li>Delivered workshops on topics including, consent, hate crimes, and bullying.</li>
             </ul>
-        </p>
+            </p>
+        </div>
+
     </div>
 
-</div>
-
+</section>
+<div style="clear:both;"></div>
 <hr>
 
-<div class="container" id="fourth_part">
-<h2>Some things I have built</h2>
+<section id="portfolio">
 
-    <div class="project_row1">
-        <div class="project_text1" id="project1">
-            <h3 class="project_header"> Object Oriented Programming: a game called "what's gonna get you?" </h3>
-            <p> Click "Run" to play the game! Left mouse click to move up.</p>
-            <p>This is just a simple and fun project demonstrating the use of OOP.</p>
-        </div>
-          <div class="project1">
-        <iframe src="https://replit.com/@WesleyJessie/whatsgoingtogetyou?embed=1&tab=console" name="turtle crossing"
-                scrolling="No" height="730px" width="100%" class="whatsgonnagetyou"></iframe>
-        </div>
-    </div>
-    <div class="project_row">
-        <div class="project" id="project2">
-            <a href="https://github.com/wecessary/zoopla_webscraping/blob/main/main.py">
-                <img src="images/zooplav2.jpg" class="project_pic" title="Code on Github">
-            </a>
-        </div>
-        <div class="project_text">
-            <h3 class="project_header"> Web scraping: gathering housing prices in Bermondsey, London </h3>
-            <p> This programme uses Beautiful Soup to collect data on properties for sale in and near Bermondsey, listed on Zoopla. </p>
-            <p> The programme can easily be scaled to collect data on different areas.</p>
-            <p> Click the image to see the code!</p>
-        </div>
+    <div class="container-fluid" id="fourth_part">
+        <h2>Some things I have built</h2>
 
-    </div>
-    <div class="project_row">
-        <div class="project" id="project3">
-            <a href="https://github.com/wecessary/tinder_bot/blob/main/main.py">
-                <img src="images/tinder.png" class="project_pic" title="Code on Github">
-            </a>
+        <div class="row">
 
-        </div>
-        <div class="project_text">
-            <h3 class="project_header"> Web browser automation: tinder swiping robot  </h3>
-            <p> This programme uses Selenium webdriver to swipe for you on Tinder! </p>
-            <p> Click the image to see the code!</p>
+            <div class="col-lg-4">
+                <a href="https://uk-inflation-dashboard.herokuapp.com/">
+                <img src="images/Inflation.jpg" class="portfolio-pic">
+                </a>
+                <p class="project-title">Plotly Dash dashboard: UK inflation" </p>
+                <p>A simple and interactive dashboard showing UK inflation using data from ONS API.</p>
+
+            </div>
+
+
+            <div class="col-lg-4">
+                <a href="https://replit.com/@WesleyJessie/whatsgoingtogetyou">
+                <img src="images/turtle_crossing.jpg" class="portfolio-pic">
+                </a>
+                <p class="project-title">Object Oriented Programming: a game called "what's gonna get you?" </p>
+                <p>A simple and fun project demonstrating the use of OOP.</p>
+
+            </div>
+
+
+            <div class="col-lg-4">
+                <a href="https://github.com/wecessary/zoopla_webscraping/blob/main/main.py">
+                    <img src="images/zooplav2.jpg" class="portfolio-pic" title="Code on Github">
+                </a>
+                <p class="project-title">Web scraping: gathering housing prices in Bermondsey, London </p>
+                <p>This programme uses Beautiful Soup to collect data on properties for sale in and near Bermondsey, listed
+                    on Zoopla.</p>
+
+            </div>
+
         </div>
 
+        <div class="row"></div>
+            <div class="col-lg-4">
+                <a href="https://github.com/wecessary/tinder_bot/blob/main/main.py">
+                    <img src="images/tinder.png" class="portfolio-pic" title="Code on Github">
+                </a>
+                <p class="project-title">Web browser automation: tinder swiping robot </p>
+                <p>This programme uses Selenium webdriver to swipe for you on Tinder! </p>
+            </div>
 
-    </div>
+        </div>
 
 
-
-
-    </div>
-</div>
-
+</section>
 <hr>
 
-<div class="last_container" id="fifth_part">
-    <div class="contact-me">
-        <h2>I am available for new opportunities.</h2>
+<section id="contact">
+    <div class="container-fluid">
 
-        <p>Have a position or freelance work? Let's chat.</p>
-        <p> <a href="mailto:wesleymhj@gmail.com" class="footer" title="My email"><i class="fa-solid fa-envelope icon"></i> Email me</a></p>
+        <h2>I'm currently not  looking for new opportunities, but I'm always up for a chat.</h2>
+        <p><a href="mailto:wesleymhj@gmail.com" class="footer" title="My email"><i
+                class="fa-solid fa-envelope icon"></i> Email me</a></p>
+
     </div>
+</section>
 
 
 
-</div>
-
-
+<!--boostrap javascript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
